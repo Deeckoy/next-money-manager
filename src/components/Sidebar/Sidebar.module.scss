@@ -1,0 +1,23 @@
+.sidebar {
+  padding: 24px 16px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  grid-area: sidebar;
+
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+}
+
+.sidebar_top {
+  display: flex;
+  flex-direction: column;
+}

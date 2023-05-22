@@ -1,0 +1,16 @@
+.header {
+  padding-top: 24px;
+  padding-right: 32px;
+
+  grid-area: header;
+
+  @media (max-width: 768px) {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  @media (max-width: 425px) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

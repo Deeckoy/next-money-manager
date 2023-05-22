@@ -1,9 +1,12 @@
 import "@/styles/reset.css";
 import "@/styles/globals.css";
-import { Providers } from "@/app/providers";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Providers } from "@/app/providers";
+import Header from "@/components/Header/Header";
+import Sidebar from "@/components/Sidebar/Sidebar";
+import { Mulish } from "next/font/google";
+
+const MulishFont = Mulish({ subsets: ["latin", "cyrillic"] });
 
 export const metadata = {
   title: "MM",
@@ -18,8 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={inter.className}>
-        <Providers>{children}</Providers>
+      <body className={MulishFont.className}>
+        <Providers>
+          <Sidebar />
+
+          <Header />
+
+          <main className="content">{children}</main>
+        </Providers>
       </body>
     </html>
   );
