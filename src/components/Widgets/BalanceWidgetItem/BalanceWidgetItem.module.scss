@@ -6,7 +6,7 @@
 	justify-content: center;
 	gap: 14px;
 
-	background: white;
+	background: var(--white);
 
 	&:not(:last-child) {
 		border-right: 1px solid var(--mauve5);
@@ -40,7 +40,7 @@
 .widget__name {
 	font-size: 14px;
 	font-weight: 700;
-	color: var(--mauve11);
+	color: var(--text-muted);
 }
 
 .widget__value {
@@ -54,5 +54,5 @@
 
 	font-size: 16px;
 	font-weight: 600;
-	color: var(--mauve11);
+	color: var(--text-muted);
 }
