@@ -1,0 +1,11 @@
+.widget__group {
+  max-width: max-content;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-radius: 10px;
+  background: white;
+
+  overflow: hidden;
+}
