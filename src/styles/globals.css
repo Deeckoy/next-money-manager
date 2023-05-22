@@ -1,49 +1,49 @@
 :root {
-  /* COLORS */
-  --mauve1: hsl(300, 20%, 99%);
-  --mauve2: hsl(300, 7.7%, 97.5%);
-  --mauve3: hsl(294, 5.5%, 95.3%);
-  --mauve4: hsl(289, 4.7%, 93.3%);
-  --mauve5: hsl(283, 4.4%, 91.3%);
-  --mauve6: hsl(278, 4.1%, 89.1%);
-  --mauve7: hsl(271, 3.9%, 86.3%);
-  --mauve8: hsl(255, 3.7%, 78.8%);
-  --mauve9: hsl(252, 4%, 57.3%);
-  --mauve10: hsl(253, 3.5%, 53.5%);
-  --mauve11: hsl(252, 4%, 44.8%);
-  --mauve12: hsl(260, 25%, 11%);
+	/* COLORS */
+	--mauve1: hsl(300, 20%, 99%);
+	--mauve2: hsl(300, 7.7%, 97.5%);
+	--mauve3: hsl(294, 5.5%, 95.3%);
+	--mauve4: hsl(289, 4.7%, 93.3%);
+	--mauve5: hsl(283, 4.4%, 91.3%);
+	--mauve6: hsl(278, 4.1%, 89.1%);
+	--mauve7: hsl(271, 3.9%, 86.3%);
+	--mauve8: hsl(255, 3.7%, 78.8%);
+	--mauve9: hsl(252, 4%, 57.3%);
+	--mauve10: hsl(253, 3.5%, 53.5%);
+	--mauve11: hsl(252, 4%, 44.8%);
+	--mauve12: hsl(260, 25%, 11%);
 
-  --blue1: hsl(206, 100%, 99.2%);
-  --blue2: hsl(210, 100%, 98%);
-  --blue3: hsl(209, 100%, 96.5%);
-  --blue4: hsl(210, 98.8%, 94%);
-  --blue5: hsl(209, 95%, 90.1%);
-  --blue6: hsl(209, 81.2%, 84.5%);
-  --blue7: hsl(208, 77.5%, 76.9%);
-  --blue8: hsl(206, 81.9%, 65.3%);
-  --blue9: hsl(206, 100%, 50%);
-  --blue10: hsl(208, 100%, 47.3%);
-  --blue11: hsl(211, 100%, 43.2%);
-  --blue12: hsl(211, 100%, 15%);
+	--blue1: hsl(206, 100%, 99.2%);
+	--blue2: hsl(210, 100%, 98%);
+	--blue3: hsl(209, 100%, 96.5%);
+	--blue4: hsl(210, 98.8%, 94%);
+	--blue5: hsl(209, 95%, 90.1%);
+	--blue6: hsl(209, 81.2%, 84.5%);
+	--blue7: hsl(208, 77.5%, 76.9%);
+	--blue8: hsl(206, 81.9%, 65.3%);
+	--blue9: hsl(206, 100%, 50%);
+	--blue10: hsl(208, 100%, 47.3%);
+	--blue11: hsl(211, 100%, 43.2%);
+	--blue12: hsl(211, 100%, 15%);
 
-  --pink1: hsl(322, 100%, 99.4%);
-  --pink2: hsl(323, 100%, 98.4%);
-  --pink3: hsl(323, 86.3%, 96.5%);
-  --pink4: hsl(323, 78.7%, 94.2%);
-  --pink5: hsl(323, 72.2%, 91.1%);
-  --pink6: hsl(323, 66.3%, 86.6%);
-  --pink7: hsl(323, 62%, 80.1%);
-  --pink8: hsl(323, 60.3%, 72.4%);
-  --pink9: hsl(322, 65%, 54.5%);
-  --pink10: hsl(322, 63.9%, 50.7%);
-  --pink11: hsl(322, 75%, 46%);
-  --pink12: hsl(320, 70%, 13.5%);
+	--pink1: hsl(322, 100%, 99.4%);
+	--pink2: hsl(323, 100%, 98.4%);
+	--pink3: hsl(323, 86.3%, 96.5%);
+	--pink4: hsl(323, 78.7%, 94.2%);
+	--pink5: hsl(323, 72.2%, 91.1%);
+	--pink6: hsl(323, 66.3%, 86.6%);
+	--pink7: hsl(323, 62%, 80.1%);
+	--pink8: hsl(323, 60.3%, 72.4%);
+	--pink9: hsl(322, 65%, 54.5%);
+	--pink10: hsl(322, 63.9%, 50.7%);
+	--pink11: hsl(322, 75%, 46%);
+	--pink12: hsl(320, 70%, 13.5%);
 
-  /* LITERAL VARS */
-  --background: var(--mauve1);
+	/* LITERAL VARS */
+	--background: var(--mauve1);
 
-  --header-height: 80px;
-  --sidebar-width: 250px;
+	--header-height: 80px;
+	--sidebar-width: 250px;
 }
 
 /*[data-theme='dark'] {
@@ -52,26 +52,26 @@
 }*/
 
 body {
-  height: 100vh;
+	height: 100vh;
 
-  display: grid;
-  grid-template-areas:
-    "sidebar header header"
-    "sidebar content content";
-  grid-template-rows: var(--header-height) auto;
-  grid-template-columns: var(--sidebar-width) auto;
+	display: grid;
+	grid-template-areas:
+		'sidebar header header'
+		'sidebar content content';
+	grid-template-rows: var(--header-height) auto;
+	grid-template-columns: var(--sidebar-width) auto;
 
-  overflow: hidden;
+	overflow: hidden;
 
-  background: var(--background);
+	background: var(--background);
 }
 
 .content {
-  padding: 24px 32px;
+	padding: 24px 32px;
 
-  grid-area: content;
-  overflow-x: hidden;
-  overflow-y: auto;
+	grid-area: content;
+	overflow-x: hidden;
+	overflow-y: auto;
 
-  background: var(--mauve3);
+	background: var(--mauve3);
 }

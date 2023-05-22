@@ -1,22 +1,22 @@
 .theme__button__wrap {
-  display: inline-block;
+	display: inline-block;
 }
 
 .theme__button {
-  width: 24px;
-  height: 24px;
+	width: 24px;
+	height: 24px;
 
-  padding: 2px;
+	padding: 2px;
 
-  border: none;
-  cursor: pointer;
+	border: none;
+	cursor: pointer;
 
-  &[data-state="on"] {
-    color: blue;
-  }
+	&[data-state='on'] {
+		color: blue;
+	}
 
-  &__icon {
-    width: 20px;
-    height: 20px;
-  }
+	&__icon {
+		width: 20px;
+		height: 20px;
+	}
 }

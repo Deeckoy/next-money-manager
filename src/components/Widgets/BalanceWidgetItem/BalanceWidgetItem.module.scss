@@ -1,58 +1,58 @@
 .widget {
-  padding: 24px;
+	padding: 24px;
 
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 14px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 14px;
 
-  background: white;
+	background: white;
 
-  &:not(:last-child) {
-    border-right: 1px solid var(--mauve5);
-  }
+	&:not(:last-child) {
+		border-right: 1px solid var(--mauve5);
+	}
 }
 
 .widget__icon__wrapper {
-  width: 38px;
-  height: 38px;
+	width: 38px;
+	height: 38px;
 
-  display: grid;
-  place-items: center;
+	display: grid;
+	place-items: center;
 
-  border-radius: 100%;
-  border: 1px solid var(--mauve5);
+	border-radius: 100%;
+	border: 1px solid var(--mauve5);
 
-  > * {
-    width: 24px;
-    height: 24px;
+	> * {
+		width: 24px;
+		height: 24px;
 
-    color: var(--mauve12);
-  }
+		color: var(--mauve12);
+	}
 }
 
 .widget__info {
-  display: flex;
-  flex-direction: column;
-  row-gap: 6px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 6px;
 }
 
 .widget__name {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--mauve11);
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--mauve11);
 }
 
 .widget__value {
-  font-size: 24px;
-  font-weight: 800;
-  color: var(--mauve12);
+	font-size: 24px;
+	font-weight: 800;
+	color: var(--mauve12);
 }
 
 .widget__stat {
-  margin-top: 10px;
+	margin-top: 10px;
 
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--mauve11);
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--mauve11);
 }
