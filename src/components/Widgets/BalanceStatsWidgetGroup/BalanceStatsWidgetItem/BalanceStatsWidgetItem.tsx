@@ -1,4 +1,4 @@
-import styles from './BalanceWidgetItem.module.scss';
+import styles from './BalanceStatsWidgetItem.module.scss';
 
 interface BalanceWidgetItemInterface {
 	icon: JSX.Element | React.ReactNode;
@@ -6,7 +6,7 @@ interface BalanceWidgetItemInterface {
 	value: string;
 }
 
-export default function BalanceWidgetItem({ icon, name, value }: BalanceWidgetItemInterface) {
+export default function BalanceStatsWidgetItem({ icon, name, value }: BalanceWidgetItemInterface) {
 	return (
 		<div className={styles.widget}>
 			<div className={styles.widget__icon__wrapper}>{icon}</div>

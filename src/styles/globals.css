@@ -76,11 +76,17 @@ body {
 }
 
 .content {
-	padding: 24px 32px;
-
 	grid-area: content;
 	overflow-x: hidden;
 	overflow-y: auto;
 
 	background: var(--content-background);
+}
+
+.content_inner {
+	max-width: 1280px;
+
+	margin: 0 auto;
+
+	padding: 24px 32px;
 }

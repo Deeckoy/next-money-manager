@@ -1,0 +1,50 @@
+.wrapper {
+	width: 100%;
+
+	overflow: auto;
+}
+
+.table {
+	width: 100%;
+	min-width: min-content;
+}
+
+.table__head__cell {
+	min-width: max-content;
+
+	padding: 12px;
+
+	font-size: 12px;
+	font-weight: 800;
+	color: var(--text-muted);
+	text-align: left;
+	text-transform: uppercase;
+
+	&:first-child {
+		padding-left: 0;
+	}
+}
+
+.table__body {
+	.table__row {
+		border-bottom: 1px solid var(--mauve5);
+
+		&:first-child {
+			border-top: 1px solid var(--mauve5);
+		}
+	}
+}
+
+.table__cell {
+	min-width: max-content;
+
+	padding: 12px;
+
+	vertical-align: middle;
+
+	text-align: left;
+
+	&:first-child {
+		padding-left: 0;
+	}
+}

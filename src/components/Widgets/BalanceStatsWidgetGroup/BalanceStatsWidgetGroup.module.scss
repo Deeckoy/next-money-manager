@@ -1,5 +1,5 @@
 .widget__group {
-	max-width: max-content;
+	min-width: min-content;
 
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -7,5 +7,5 @@
 	border-radius: 10px;
 	background: var(--white);
 
-	overflow: hidden;
+	overflow-x: auto;
 }

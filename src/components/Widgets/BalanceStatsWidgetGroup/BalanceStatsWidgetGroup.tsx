@@ -1,9 +1,9 @@
-import BalanceWidgetItem from '@/components/Widgets/BalanceWidgetItem/BalanceWidgetItem';
+import BalanceWidgetItem from './BalanceStatsWidgetItem/BalanceStatsWidgetItem';
 import { BanknotesIcon } from '@heroicons/react/24/outline';
 
-import styles from './BalanceWidgetGroup.module.scss';
+import styles from './BalanceStatsWidgetGroup.module.scss';
 
-export default function BalanceWidgetGroup() {
+export default function BalanceStatsWidgetGroup() {
 	return (
 		<div className={styles.widget__group}>
 			<BalanceWidgetItem icon={<BanknotesIcon />} name={'Total balance'} value={'$5420.21'} />

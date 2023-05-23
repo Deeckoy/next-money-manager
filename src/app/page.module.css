@@ -1,0 +1,12 @@
+.dashboard {
+	display: grid;
+	grid-template-columns: minmax(650px, 65%) auto;
+	gap: 24px;
+	grid-template-rows: auto;
+}
+
+.dashboard__column {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}

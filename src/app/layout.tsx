@@ -23,7 +23,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 					<Header />
 
-					<main className='content'>{children}</main>
+					<main className='content'>
+						<div className='content_inner'>{children}</div>
+					</main>
 				</Providers>
 			</body>
 		</html>
