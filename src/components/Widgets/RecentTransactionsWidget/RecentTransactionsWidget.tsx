@@ -1,4 +1,4 @@
-import { TableBody, TableWrapper } from '@/components/Table';
+import RecentTransactionsList from '@/components/Widgets/RecentTransactionsWidget/RecentTransactionsList';
 import Link from 'next/link';
 import * as Table from '@/components/Table';
 import styles from './RecentTransactionWidget.module.scss';
@@ -30,47 +30,7 @@ export default function RecentTransactionsWidget() {
 						</Table.TableHead>
 
 						<Table.TableBody>
-							<Table.TableRow>
-								<Table.TableColumn>
-									<p className={styles.column__name}>iPhone 13 Pro Max</p>
-									<p className={styles.column__description}>apple.inc</p>
-								</Table.TableColumn>
-
-								<Table.TableColumn>
-									<p className={styles.column__type}>Mobile</p>
-								</Table.TableColumn>
-
-								<Table.TableColumn>
-									<p className={styles.column__amount}>$800.00</p>
-								</Table.TableColumn>
-
-								<Table.TableColumn>
-									<p className={styles.column__date}>25 Nov. 2021</p>
-								</Table.TableColumn>
-
-								<Table.TableColumn>X</Table.TableColumn>
-							</Table.TableRow>
-
-							<Table.TableRow>
-								<Table.TableColumn>
-									<p className={styles.column__name}>Netflix Premium Subscription</p>
-									<p className={styles.column__description}>netflix.inc</p>
-								</Table.TableColumn>
-
-								<Table.TableColumn>
-									<p className={styles.column__type}>Entertainment</p>
-								</Table.TableColumn>
-
-								<Table.TableColumn>
-									<p className={styles.column__amount}>$60.00</p>
-								</Table.TableColumn>
-
-								<Table.TableColumn>
-									<p className={styles.column__date}>25 Nov. 2021</p>
-								</Table.TableColumn>
-
-								<Table.TableColumn>X</Table.TableColumn>
-							</Table.TableRow>
+							<RecentTransactionsList />
 						</Table.TableBody>
 					</Table.Table>
 				</Table.TableWrapper>
