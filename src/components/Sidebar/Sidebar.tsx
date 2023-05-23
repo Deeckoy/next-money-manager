@@ -1,6 +1,7 @@
 'use client';
 
 import {
+	ArrowLeftOnRectangleIcon,
 	ChartPieIcon,
 	ClockIcon,
 	Cog6ToothIcon,
@@ -97,6 +98,15 @@ export default function Sidebar() {
 						href={'/settings'}>
 						<Cog6ToothIcon className={`${styles.sidebar__link__icon}`} />
 						Settings
+					</Link>
+
+					<Link
+						className={`${styles.sidebar__link} ${
+							isLinkActive('/logout') ? styles.sidebar__link_active : ''
+						}`}
+						href={'/logout'}>
+						<ArrowLeftOnRectangleIcon className={`${styles.sidebar__link__icon}`} />
+						Logout
 					</Link>
 				</div>
 			</div>
