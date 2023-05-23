@@ -4,6 +4,7 @@ import '@/styles/globals.css';
 import { Providers } from '@/app/providers';
 import Header from '@/components/Header/Header';
 import Sidebar from '@/components/Sidebar/Sidebar';
+import { Analytics } from '@vercel/analytics/react';
 import { Mulish } from 'next/font/google';
 
 const MulishFont = Mulish({ subsets: ['latin', 'cyrillic'] });
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						<div className='content_inner'>{children}</div>
 					</main>
 				</Providers>
+				<Analytics />
 			</body>
 		</html>
 	);
